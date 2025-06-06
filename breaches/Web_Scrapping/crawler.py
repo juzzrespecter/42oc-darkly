@@ -27,7 +27,7 @@ def recursive_search(url, level):
 
 if __name__ == '__main__':
     if len(sys.argv[1:]) != 1:
-        print("Bad arguments")
+        print("Bad arguments: no URL provided")
         sys.exit(1)
     base_url = sys.argv[1]
     recursive_search(base_url, 0)

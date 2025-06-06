@@ -1,3 +1,5 @@
+# SQL Injection - Images
+
 ```
 1 or 1=1 union select title, comment from list_images
 ```

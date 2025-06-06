@@ -10,7 +10,7 @@ nav:
     - Insecure Authentication Method: breaches/insecure_authentication_method.md
     - Open Redirect Vulnerability: breaches/open_redirect.md
     - Cookie Tampering: breaches/cookie_tampering.md
-    - XSS Injection: breaches/xss_injection.md
+    - Stored XSS Injection: breaches/xss_injection.md
     - Web Parameter Tampering: breaches/web_tampering.md
     - Form Tampering: breaches/form_tampering.md
     - Brute Force Credentials: breaches/brute_force.md

@@ -84,3 +84,9 @@ Nmap no nos devuelve más información relevante que no hayamos obtenido con el 
 ## Fuzzeando la aplicación web
 Tras una exploración inicial a la página, nos damos cuenta de que el servidor gestiona la navegación a partir de la introducción de un parámetro al propio index, de la forma **index.php?page=XXX**, por lo que podemos aprovechar y fuzzear el argumento para obtener información interesante.
 
+```bash
+wfuzz -w /rockyou.txt --hh 975 http://192.168.13.47/index.php?page=FUZZ
+
+
+```
+

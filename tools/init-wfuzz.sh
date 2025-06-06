@@ -16,4 +16,4 @@ fi
 docker run -v $(pwd)/wordlist:/wordlist -it ghcr.io/xmendez/wfuzz wfuzz \
     -w /rockyou.txt \
     --hh 975 \
-    http://"$URL"
+    $URL
