@@ -1,0 +1,10 @@
+<div>Tal
+<script type="text/&#106;avascript">
+	function checkForm() {
+		alert("classic XSS");
+		return false;
+	}
+	document.querySelector("form").onsubmit=checkForm();
+	document.querySelector("textarea").mtxMessage = document.cookie;
+</script>
+</div>
