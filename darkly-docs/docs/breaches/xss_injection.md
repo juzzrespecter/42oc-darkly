@@ -1,4 +1,5 @@
 # Inyección XSS
+## Ataque
 (Stored XSS)
 
 - Reconocimiento

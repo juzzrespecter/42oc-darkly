@@ -1,1 +1,0 @@
-docker run --rm -v ./crawler.py:/crawler.py python sh -c "pip install requests bs4; python crawler.py http://192.168.1.66/.hidden/"
