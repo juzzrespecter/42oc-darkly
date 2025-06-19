@@ -12,7 +12,9 @@ Tenemos un formulario en el que se nos permite seleccionar de entre una serie de
 
 ![Formulario vulnerable](image.png)
 
-Inspeccionando la página se nos revela que los dos parámetros que se envían se encuentran como valores en el formulario, la selección del elemento en un **hidden input** y el valor en opciones dentro de un select. 
+Inspeccionando la página se nos revela que los dos parámetros que se envían se encuentran como valores en el formulario, la selección del elemento en un **hidden input** y el valor en opciones dentro de un select.
+
+
 
 ## Mitigaciones
 

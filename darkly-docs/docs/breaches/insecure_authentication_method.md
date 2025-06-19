@@ -1,5 +1,7 @@
 # Explotación archivo htpasswd
 
+
+## Ataque
 En el reconocimiento inicial, hemos visto que el servidor usa el fichero **robots.txt** para ocultar ciertos archivos o directorios de crawlers.
 
 
@@ -24,3 +26,7 @@ Lanzamos un john para ver si podemos crackearlo.
 ```
 
 Son credenciales de admin, pues nos intentamos loggear como admin.
+
+## Mitigaciones
+
+## Referencias

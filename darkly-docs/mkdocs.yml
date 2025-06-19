@@ -14,7 +14,7 @@ nav:
     - Web Parameter Tampering: breaches/web_tampering.md
     - Form Tampering: breaches/form_tampering.md
     - Brute Force Credentials: breaches/brute_force.md
-    # - File Upload: breaches/file_upload.md
+    - Unrestricted File Upload: breaches/unrestricted_file_upload.md
     # - ???: ???
 theme:
   name: readthedocs
