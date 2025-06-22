@@ -1,12 +1,10 @@
- # Web parameter tampering
+# Web parameter tampering
 
-este para el formulari de encuestas
 Este ataque tiene el mismo planteamiento que [el ataque de manipulación de DOM en la página de encuestas](./form_tampering_surveys.md)
 
 Algunos formularios utilizan **hidden inputs** o inputs ocultos para enviar valores fijos desde el cliente al servidor. Aunque a primera vista no estén disponibles para su edición, si no existen **lógicas de validación de inputs** o estas no funcionan adecuadamente, un atacante puede editar este parámetro para obtener el control de la lógica de funcionamiento de la aplicación.
-s
 
- # Ataque
+# Ataque
  - **Localización**: /?page=recover
 
 Observando el formulario para recuperar contraseña, vemos que la petición manda el mismo valor `mail`, valor que se puede encontrar en un **input ocultado** en el DOM si inspeccionamos.  
@@ -20,10 +18,10 @@ Observando el formulario para recuperar contraseña, vemos que la petición mand
 
 Podemos editar este valor para poner un mail que esté bajo nuestro control, y al hacer click al botón de postear, la petición envía nuestro mail y retorna la flag.
 
- # Mitigación
+# Mitigación
 
 - validacion back noseque
 
- # Referencias
+# Referencias
 
  - [OWASP: Web parameter tampering](https://owasp.org/www-community/attacks/Web_Parameter_Tampering)

@@ -40,9 +40,9 @@ obtenemos la flag.
 
 - Uso de herramientas de limitación de peticiones por segundo para mitigar ataques de fuerza bruta.
 - **Securización de credenciales** 
-    - Monitorización de credenciales en filtraciones de datos
-    - Implementación de protocolos de complejidad de contraseñas
-    - Implementar mecanismos de lockout.
+- Monitorización de credenciales en filtraciones de datos
+- Implementación de protocolos de complejidad de contraseñas
+- Implementar mecanismos de lockout.
 
 ## Referencias
 - [A07:2021 – Identification and Authentication Failures](https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures/)

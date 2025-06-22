@@ -10,11 +10,11 @@ por el cual se puede enviar información customizada al servidor.
 
 Tenemos un formulario en el que se nos permite seleccionar de entre una serie de opciones, al hacerlo se ejecuta el submit y el valor de la opción se incrementa.
 
-![Formulario vulnerable](image.png)
+![Formulario vulnerable](options.png)
 
 Inspeccionando la página se nos revela que los dos parámetros que se envían se encuentran como valores en el formulario, la selección del elemento en un **hidden input** y el valor en opciones dentro de un select.
 
-
+El input oculto selecciona el índice del elemento en el que se va a añadir la puntuación, pero el input que realmente interesa es el valor de la selección.
 
 ## Mitigaciones
 

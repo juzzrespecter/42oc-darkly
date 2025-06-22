@@ -1,10 +1,10 @@
 # Unrestricted File Upload
-
+## owasp
 
 
 ## Ataque
 
-- **Localización: /?page=upload**
+- **Localización**: /?page=upload
 
 En la vista tenemos un formulario que nos permite subir imágenes, lo que nos puede proporcionar una superficie de ataque para inyectar código propio y ejecutarlo en el servidor.
 

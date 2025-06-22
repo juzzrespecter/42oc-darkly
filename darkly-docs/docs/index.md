@@ -90,3 +90,8 @@ wfuzz -w /rockyou.txt --hh 975 http://192.168.13.47/index.php?page=FUZZ
 
 ```
 
+
+## Ïndice
+- [Obtención de credenciales por fuerza bruta]()
+- [Manipulación de cookies]()
+- 

@@ -1,11 +1,12 @@
 # Reflected XSS Attack
-**A7:2017-Cross-Site Scripting (XSS)**
+### A7:2017-Cross-Site Scripting (XSS)
 (owasp)
 
 Consiste en noseque (reflected xss, phising, la movida)
 
 ## Ataque
 - **Localización: /index.php?page=media**
+
 En el reconocimiento inicial hemos observado que una de las imágenes embebidas contiene un  **href** que nos redirige a una página donde se renderiza la imagen.
 
 Vemos que la imagen se refleja en el DOM mediante el siguiente tag `object` con un parámtero `src` el cual indica de dónde se ha de obtener la imagen.

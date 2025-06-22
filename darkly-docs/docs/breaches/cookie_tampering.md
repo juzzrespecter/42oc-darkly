@@ -2,7 +2,7 @@
 ### A07:2021 – Identification and Authentication Failures
 
 Para la gestión de roles en una aplicación web, es habitual el uso de tokens o cookies para identificar el rol de un usuario.
-
+Si estos tokens no tienen una securización lo suficientemente fuerte, pueden ser objeto de ataques automáticos que permitan la obtención de credenciales o de roles inadecuados para el usuario.
 
 ## Ataque
 
@@ -44,8 +44,10 @@ echo -n true | md5sum
 
 ## Mitigación
 - No usar MD5 para hashear absolutamente nada relacionado con credenciales.
-- Uso
+- Asingación de roles en base a **credenciales de usuario**.
+- Uso de nombres de cookies menos descriptivos para obfuscar el flujo de asignación de roles.
 
 ## Referencias
 
 - [OWASP: Testing for cookie attributes](https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes)
+- [A07:2021 – Identification and Authentication Failures](https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures/)
