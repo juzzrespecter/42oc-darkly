@@ -6,7 +6,7 @@ por el cual se puede enviar información customizada al servidor.
 
 ## Ataque
 
-- **Localización**: http://<IP>/?page=survey
+- **Localización**: /?page=survey
 
 Tenemos un formulario en el que se nos permite seleccionar de entre una serie de opciones, al hacerlo se ejecuta el submit y el valor de la opción se incrementa.
 

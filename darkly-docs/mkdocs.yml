@@ -11,8 +11,8 @@ nav:
     - Open Redirect Vulnerability: breaches/open_redirect.md
     - Cookie Tampering: breaches/cookie_tampering.md
     - Stored XSS Injection: breaches/xss_injection.md
-    - Web Parameter Tampering: breaches/web_tampering.md
-    - Form Tampering: breaches/form_tampering.md
+    - Web Parameter Tampering: breaches/web_parameter_tampering.md
+    - Form Tampering: breaches/form_tampering_surveys.md
     - Brute Force Credentials: breaches/brute_force.md
     - Unrestricted File Upload: breaches/unrestricted_file_upload.md
     # - ???: ???
