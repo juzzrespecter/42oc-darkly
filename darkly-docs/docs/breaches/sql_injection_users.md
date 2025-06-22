@@ -1,5 +1,9 @@
 # Inyección SQL - Usuarios
+(owasp)
 
+Misma vulnerabilidad que [la inyección SQL en la vista de imágenes](./sql_injection_images.md).
+
+El ataque de **inyección SQL** consiste en la capacidad de realizar queries diréctamente a la base de datos del servidor mediante la introducción de queries SQL en parámetros de input **no sanitizado**.
 
 ## Ataque
 

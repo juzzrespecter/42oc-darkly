@@ -1,4 +1,8 @@
+# Development stuff
+
 */**/.venv
 .venv
 Darkly_i386.iso
 rockyou.txt
+*/**/BurpSuiteCommunity
+*/**/burpsuite_community*
