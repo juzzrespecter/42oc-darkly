@@ -6,6 +6,8 @@ Si estos tokens no tienen una securización lo suficientemente fuerte, pueden se
 
 ## Ataque
 
+- **Localización**: No definida 
+
 En la parte inicial de reconocimiento, hemos observado que al hacer una petición al servidor, éste nos retorna una cabecera `Set-Cookie` con un 
 formato interesante.
 

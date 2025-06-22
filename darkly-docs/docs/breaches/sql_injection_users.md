@@ -1,5 +1,5 @@
 # Inyección SQL - Usuarios
-### (owasp)
+### A03:2021-Injection
 
 Misma vulnerabilidad que [la inyección SQL en la vista de imágenes](./sql_injection_images.md).
 

@@ -1,5 +1,4 @@
 # Web scraping
-### Owasp
 
 `Scraping` es una técnica que puede ser usada en detección de vulnerabilidades, que consiste en la recopilación y acceso de todos los links presentes en una aplicación web de forma recursiva. 
 

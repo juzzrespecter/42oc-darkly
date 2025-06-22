@@ -1,4 +1,6 @@
-# Explotación archivo htpasswd
+# Explotación de archivo htpasswd
+### A07:2021 – Identification and Authentication Failures
+### A02:2021 – Cryptographic Failures
 
 
 ## Ataque
@@ -21,12 +23,12 @@ Lanzamos un john para ver si podemos crackearlo.
 
 ```
 ./john --format=raw-md5 --wordlist=rockyou.txt ./htpasswd
-
-
 ```
 
 Son credenciales de admin, pues nos intentamos loggear como admin.
+Usamos las credenciales en la URL **/index.php?page=admin**, donde se presenta un formulario para introducir credenciales de administración, obtenemos la flag.
 
 ## Mitigaciones
+
 
 ## Referencias
