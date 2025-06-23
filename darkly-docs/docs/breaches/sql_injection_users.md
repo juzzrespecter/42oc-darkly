@@ -85,9 +85,11 @@ root@f4e2e2e5dc49:/# echo -n FortyTwo | sha256sum
 
 He aquí la flag.
 
-## Mitigación
+## Mitigaciones
 
-
+- Validaciones en backend, sobre todo con respecto a uso de ORMs para parametrizar el input en queries.
 
 ## Referencias
 
+- [OWASP: SQL Injection](https://owasp.org/www-community/attacks/SQL_Injection)
+- [SQL Injection cheatsheet](https://github.com/kleiton0x00/Advanced-SQL-Injection-Cheatsheet/blob/main/MySQL-Bypass-Error/README.md)

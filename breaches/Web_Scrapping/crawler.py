@@ -19,9 +19,6 @@ def recursive_search(url, level):
                 print(r.text)
             continue
         request_url = url + link['href']
-        if request_url in test_urls:
-            print("wtf")
-            raise 'e'
         test_urls.append(request_url)
         recursive_search(request_url, level+1)
 

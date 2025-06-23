@@ -1,8 +1,6 @@
 # Reflected XSS Attack
 ### A03:2021-Injection
-(owasp)
-
-Consiste en noseque (reflected xss, phising, la movida)
+Los ataques de **XSS reflejados** consisten en la inyección de código sin almacenamiento en servidor (a diferencia de [los ataques de XSS almacenados](./xss_injection.md)). Al no ser persistentes, los ataques constan de un único ciclo de vida de petición y respuesta, mayormente orientado a campañas de **phising** en las que la URL provista (y aparentemente legítima) ejecute código externo en el navegador del usuario
 
 ## Ataque
 - **Localización: /index.php?page=media**
@@ -70,8 +68,12 @@ Introduciendo este parámetro obtenemos la flag.
 
 ## Mitigaciones
 
+- Replanteamiento del diseño de la aplicación: no debería ser posible para el usuario embeber un archivo sin controlar.
+- Validación de input en el servidor: si no es posible modificar la arquitectura, validar input para evitar la inyección de ficheros inline.
+
 ## Referencias
 
 - [The external object tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/object)
 - [URI data reference](https://developer.mozilla.org/es/docs/Web/URI/Reference/Schemes/data)
 - [OWASP: Cross Side Scripting](https://owasp.org/www-community/attacks/xss/)
+- [OWASP: Testing for Reflected Cross Site Scripting](https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/07-Input_Validation_Testing/01-Testing_for_Reflected_Cross_Site_Scripting.html)

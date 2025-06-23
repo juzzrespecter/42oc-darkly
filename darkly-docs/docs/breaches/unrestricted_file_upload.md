@@ -1,7 +1,7 @@
 # Unrestricted File Upload
 ### A03:2021-Injection
 
-
+La capacidad de subida de ficheros a un servidor presenta una superficie de ataque para la **inyección de código externo** si no se presentan las validaciones adecuadas. Sin estas, es posible tanto la ejecución de código en servidor como la ejecución de código en clientes.
 
 ## Ataque
 
@@ -65,6 +65,8 @@ De todos estos parámetros, vemos que el único posible para validar el archivo 
 
 Posteamos y obtenemos la flag.
 
-## Mitigación
+## Mitigaciones
+- Validación correcta de archivos: no depender de **mimetypes** ni de la cabecera de contenido, sino con el uso de [**números mágicos**](https://en.wikipedia.org/wiki/List_of_file_signatures).
 
 ## Referencias
+- [OWASP: Unrestricted File Upload](https://owasp.org/www-community/vulnerabilities/Unrestricted_File_Upload)

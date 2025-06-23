@@ -24,9 +24,11 @@ El servidor nos devuelve la flag.
 
 ## Mitigaciones
 
-- validacion backend
-- temas cors ?? investigar
+- Validación en backend (estrategia de **whitelist** de inputs)
+- Uso de avisos dirigidos hacia el cliente para avisar de redirecciones fuera del dominio.
 
 ## Referencias
 
 - [WSTG: Testing for Client Side URL Redirect](https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/11-Client_Side_Testing/04-Testing_for_Client_Side_URL_Redirect)
+- [CWE-601: URL Redirection to Untrusted Site ('Open Redirect')
+](https://cwe.mitre.org/data/definitions/601.html)

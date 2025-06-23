@@ -5,10 +5,10 @@ nav:
     - SQL Injection - Users: breaches/sql_injection_users.md
     - SQL Injection - Images: breaches/sql_injection_images.md
     - Web Crawling: breaches/web_crawling.md
-    - Local File Inclusion: breaches/local_file_incusion.md
+    - Local File Inclusion: breaches/local_file_inclusion.md
     - Http Proxying: breaches/http_proxying.md
     - Insecure Authentication Method: breaches/insecure_authentication_method.md
-    - Open Redirect Vulnerability: bre  3`saches/open_redirect.md
+    - Open Redirect Vulnerability: breaches/open_redirect.md
     - Cookie Tampering: breaches/cookie_tampering.md
     - Stored XSS Injection: breaches/xss_injection.md
     - Web Parameter Tampering: breaches/web_parameter_tampering.md
