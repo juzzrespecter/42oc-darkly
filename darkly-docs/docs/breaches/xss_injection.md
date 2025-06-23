@@ -1,11 +1,11 @@
 # Inyección XSS
 ### A03:2021-Injection
 
-Una **inyección de código XSS** o **stored xss** es un ataque de inyección de 
+Una **inyección de código XSS** o **stored xss** es un ataque de inyección de código en el que el atacante es capaz de **guardar** código ejecutable debido a una ncorrecta validación de input, y este payload es servido por la aplicación a navegadores de usuarios que ejecutarán el script malicioso.
 ...
 ## Ataque
 
-- **Localización**: 
+- **Localización**: /index.php?page=feedback
 
 - Reconocimiento
 - Identificación de la vulnerabilidad
@@ -33,6 +33,7 @@ Para obtener la flag, simplemente hemos de escribir script en el input del nombr
 ## Mitigación
 - Validación de input de usuario en servidor.
 - Escape de caracteres especiales (html) en servidor.
+- También pueden escaparse desde el lado del cliente los inputs guardados por usuario.
 
 ## Referencias
-- https://owasp.org/www-community/attacks/xss/
+- [OWASP: Cross Site Scripting (XSS)](https://owasp.org/www-community/attacks/xss/)

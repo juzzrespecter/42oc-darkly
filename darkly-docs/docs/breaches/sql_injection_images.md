@@ -5,7 +5,7 @@ Misma vulnerabilidad que [la inyección SQL en la vista de usuarios](./sql_injec
 
 ## Ataque
 
-- **Localización: **?
+- **Localización**: /index.php?page=searchimg
 
 En el apartado de búsqueda de imágenes tenemos un buscador de imágenes por id, en este caso la inyección está un poco más obfuscada ya que no imprime por pantalla el error de la query.
 
@@ -28,6 +28,6 @@ Crackeamos el hash MD5 con **johntheripper**.
 ```bash
 
 ```
-## Mitigación
+## Mitigaciones
 
 ## Referencias

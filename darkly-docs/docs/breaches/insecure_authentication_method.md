@@ -1,9 +1,15 @@
-# Explotación de archivo htpasswd
+# Path Traversal | Explotación de archivo htpasswd
 ### A07:2021 – Identification and Authentication Failures
 ### A02:2021 – Cryptographic Failures
 
+Aunque no sea exactamente un ataque de path traversal, se incluye como tipo de vulnerabilidad ya que implica el acceso a directorios que no forman parte de la lógica de la aplicación.
+
+El fichero **robots.txt** es un fichero que permite excluir distintos directorios y ficheros en la rutina de búsqueda de crawlers y bots para indexadores y buscadores. Un mal uso de este archivo es tratar de ocultar recursos sensibles, ya que estos siguen siendo accesibles.
 
 ## Ataque
+
+- **Localización**: /whatever/
+
 En el reconocimiento inicial, hemos visto que el servidor usa el fichero **robots.txt** para ocultar ciertos archivos o directorios de crawlers.
 
 
@@ -30,5 +36,10 @@ Usamos las credenciales en la URL **/index.php?page=admin**, donde se presenta u
 
 ## Mitigaciones
 
+- Uso de algoritmos de encriptación fuertes y actualizados.
+- Revisión y correcta gestión del sistema de archivos de la aplicación.
 
 ## Referencias
+
+- [OWASP: Path Traversal](https://owasp.org/www-community/attacks/Path_Traversal)
+- [OWASP: Testing for Weak Encryption](https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/04-Testing_for_Weak_Encryption)

@@ -2,6 +2,7 @@
 ### A03:2021-Injection
 
 
+
 ## Ataque
 
 - **Localización**: /?page=upload
@@ -33,12 +34,12 @@ Host: 192.168.222.47
 Content-Length: 421
 Cache-Control: max-age=0
 Accept-Language: en-US,en;q=0.9
-Origin: http://192.168.222.47
+Origin: http://xxx.xxx.xxx.xxx
 Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryY6ZlA6O5iyi2PaOF
 Upgrade-Insecure-Requests: 1
 User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
-Referer: http://192.168.222.47/?page=upload
+Referer: http://xxx.xxx.xxx.xxx/?page=upload
 Accept-Encoding: gzip, deflate, br
 Cookie: I_am_admin=68934a3e9455fa72420237eb05902327
 Connection: keep-alive

@@ -18,8 +18,8 @@ El input oculto selecciona el índice del elemento en el que se va a añadir la 
 
 ## Mitigaciones
 
-- buen diseño forms
-- validacion backend
+- El envío del valor del mail es completamente innecesario en este caso, una buena forma de mitigación es eliminar los inputs que no necesitan ser provistos por el usuario y gestionar esos valores desde el servidor.
+- En caso de que sea necesaria la introducción del input por parte de usuario, validación de este en backend.
 
 ## Referencias
 - [OWASP: Web Parameter Tampering](https://owasp.org/www-community/attacks/Web_Parameter_Tampering)

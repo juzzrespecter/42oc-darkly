@@ -1,4 +1,4 @@
-# Local File Inclusion
+# Local File Inclusion | Directory Traversal Attack
 ### A03:2021 – Injection
 
 La vulnerabilidad de **inclusión de archivo local** consiste en la posible carga de ficheros no expuestos por parte del propio servidor.
@@ -25,6 +25,9 @@ http://xxx.xxx.xxx.xxx/index.php?page=../../../../../../../etc/passwd
 
 Y obtenemos la flag.
 ## Mitigación
+
+- Una configuración correcta del proxy para limitar el acceso a archivos.
+- **Mejora de instrucciones en el servidor**: En vez de servir archivos estáticos directamente, uso de cabeceras de petición para servir los archivos.
 
 ## Referencias
 - [OWASP: Testing for Local File Inclusion](https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/07-Input_Validation_Testing/11.1-Testing_for_Local_File_Inclusion)
