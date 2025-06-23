@@ -7,7 +7,7 @@ Estos ataques pueden ser completamente manuales o automatizados mediante el uso 
 
 ## Ataque
 
-- **Localización**: http://<IP>/index.php?page=singin
+- **Localización**: /index.php?page=singin
 
 Tenemos un formulario para ingresar unas credenciales y loguearse en la página. Hacemos las pruebas necesarias para ver si hay algún error de sanitización de input de usuario, como una [inyección SQL](./sql_injection_users.md). 
 

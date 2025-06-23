@@ -8,13 +8,13 @@ nav:
     - Local File Inclusion: breaches/local_file_incusion.md
     - Http Proxying: breaches/http_proxying.md
     - Insecure Authentication Method: breaches/insecure_authentication_method.md
-    - Open Redirect Vulnerability: breaches/open_redirect.md
+    - Open Redirect Vulnerability: bre  3`saches/open_redirect.md
     - Cookie Tampering: breaches/cookie_tampering.md
     - Stored XSS Injection: breaches/xss_injection.md
     - Web Parameter Tampering: breaches/web_parameter_tampering.md
     - Form Tampering: breaches/form_tampering_surveys.md
     - Brute Force Credentials: breaches/brute_force.md
     - Unrestricted File Upload: breaches/unrestricted_file_upload.md
-    # - ???: ???
+    - Reflected XSS Attack: breaches/reflected_xss_attack.md
 theme:
   name: readthedocs

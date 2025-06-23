@@ -1,7 +1,6 @@
 # Open Redirection
 ### A10:2021 – Server-Side Request Forgery (SSRF)
 
-
 Las redirecciones en el lado del cliente, si no están debidamente controladas, pueden suponer una superficie de ataque para **campañas de phising**, en las que un actor malicioso puede hacer pasar una web maliciosa como una url legítima usando el parámetro de redirección para realizar su ataque.
 
 ## Ataque

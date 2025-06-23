@@ -1,7 +1,6 @@
 # SQL Injection - Images
 ### A03:2021-Injection
 
-
 Misma vulnerabilidad que [la inyección SQL en la vista de usuarios](./sql_injection_users.md). 
 
 ## Ataque

@@ -85,13 +85,49 @@ Nmap no nos devuelve más información relevante que no hayamos obtenido con el 
 Tras una exploración inicial a la página, nos damos cuenta de que el servidor gestiona la navegación a partir de la introducción de un parámetro al propio index, de la forma **index.php?page=XXX**, por lo que podemos aprovechar y fuzzear el argumento para obtener información interesante.
 
 ```bash
-wfuzz -w /rockyou.txt --hh 975 http://192.168.13.47/index.php?page=FUZZ
+wfuzz -w /rockyou.txt --hh 6924 http://xxx.xxx.xxx.xxx/index.php?page=FUZZ
 
+********************************************************
+* Wfuzz 3.1.0 - The Web Fuzzer                         *
+********************************************************
+
+Target: http://192.168.1.244/index.php?page=FUZZ
+Total requests: 951
+
+=====================================================================
+ID           Response   Lines    Word       Chars       Payload                                                                                                     
+=====================================================================
+
+000000247:   200        133 L    745 W      6997 Ch     "default"                                                                                                   
+000000339:   200        107 L    245 W      3325 Ch     "feedback"                                                                                                  
+000000390:   200        86 L     213 W      3071 Ch     "header"                                                                                                    
+000000516:   200        71 L     170 W      2460 Ch     "member"                                                                                                    
+000000673:   200        54 L     128 W      1893 Ch     "redirect"                                                                                                  
+000000758:   200        85 L     204 W      3014 Ch     "signin"                                                                                                    
+000000810:   200        211 L    424 W      5913 Ch     "survey"                                                                                                    
+000000862:   200        77 L     176 W      2497 Ch     "upload"                                                                                                    
+
+Total time: 0
+Processed Requests: 951
+Filtered Requests: 943
+Requests/sec.: 0
 
 ```
 
+No obtenemos nada que no hayamos visto con el crawler.
 
-## Ïndice
-- [Obtención de credenciales por fuerza bruta]()
-- [Manipulación de cookies]()
-- 
+## Índice
+- [Obtención de credenciales por fuerza bruta](./breaches/brute_force.md)
+- [Manipulación de cookies](./breaches/cookie_tampering.md)
+- [Manipulación de parámetros en formularios - Encuesta](./breaches/form_tampering_surveys.md)
+- [Manipulación de cabeceras de petición - Uso de proxies](./breaches/form_tampering_surveys.md)
+- [Método inseguro de autentificación](./breaches/insecure_authentication_method.md)
+- [Inclusión local de archivos](./breaches/local_file_inclusion.md)
+- [Redirección en cliente](./breaches/open_redirect.md)
+- [Ataque XSS reflejado](./breaches/reflected_xss_attack.md)
+- [Inyección SQL - imágenes](./breaches/sql_injection_images.md)
+- [Inyección SQL - usuarios](./breaches/sql_injection_users.md)
+- [Subida de archivos](./breaches/unrestricted_file_upload.md)
+- [Web crawling](./breaches/web_crawling.md)
+- [Manipulación de parámetros - hidden input](./breaches/web_parameter_tampering.md)
+- [Inyección XSS](./breaches/xss_injection.md)

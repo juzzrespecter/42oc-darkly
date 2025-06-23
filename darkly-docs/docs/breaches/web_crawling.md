@@ -12,8 +12,8 @@ docker run --rm -v ./crawler.py:/crawler.py python sh -c "pip install requests b
 ```
 
 ## Mitigaciones
-Control de acceso a recursos y revisión de ficheros.
-Tema de control de peticiones, user-agent, etx
+- Control de acceso a recursos y revisión de ficheros.
+- Tema de control de peticiones, user-agent, etx
 
 ## Referencias
 

@@ -1,10 +1,11 @@
 # Inyección XSS
 ### A03:2021-Injection
 
+Una **inyección de código XSS** o **stored xss** es un ataque de inyección de 
 ...
 ## Ataque
 
-(Stored XSS)
+- **Localización**: 
 
 - Reconocimiento
 - Identificación de la vulnerabilidad
